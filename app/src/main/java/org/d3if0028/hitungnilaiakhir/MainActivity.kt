@@ -3,6 +3,7 @@ package org.d3if0028.hitungnilaiakhir
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import org.d3if0028.hitungnilaiakhir.databinding.ActivityMainBinding
+import org.d3if0028.hitungnilaiakhir.model.KategoriNilai
 
 class MainActivity : AppCompatActivity() {
 
@@ -45,15 +46,25 @@ class MainActivity : AppCompatActivity() {
 
         binding.namaTextView2.text = getString(R.string.nama_siswa, nama)
         binding.akhirTextView.text = getString(R.string.akhir_n, hasil)
-        binding.hurufTextView.text = getString(R.string.huruf_n, huruf)
+        binding.hurufTextView.text = getString(R.string.huruf_n, getHurufLabel(huruf))
     }
-    private fun getHuruf(hasil: Double): String{
-        val stringRes =
-           when {
-               hasil >= 85 -> R.string.nilai_a
-               hasil >= 70 && hasil <= 85 -> R.string.nilai_b
-               else -> R.string.nilai_c
-           }
+
+    private fun getHuruf(hasil: Double): KategoriNilai {
+        val kategori =
+            when {
+                hasil >= 85 -> KategoriNilai.A
+                hasil >= 70 && hasil <= 85 -> KategoriNilai.B
+                else -> KategoriNilai.C
+            }
+        return kategori
+    }
+
+    private fun getHurufLabel(kategori: KategoriNilai): String {
+        val stringRes = when (kategori){
+            KategoriNilai.A -> R.string.nilai_a
+            KategoriNilai.B -> R.string.nilai_b
+            KategoriNilai.C -> R.string.nilai_c
+        }
         return getString(stringRes)
     }
 }
