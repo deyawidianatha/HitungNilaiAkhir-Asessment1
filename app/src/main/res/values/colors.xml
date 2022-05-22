@@ -9,5 +9,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="merahindia_500">#CD5C5C</color>
     <color name="merahindia_700">#CD5C5C</color>
+    <color name="B">#F57F17</color>
+    <color name="A">#2E7D32</color>
+    <color name="C">#D32F2F</color>
 
 </resources>
