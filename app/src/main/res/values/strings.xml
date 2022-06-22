@@ -37,8 +37,13 @@
     <string name="saran_B">Cobalah untuk tetap belajar hal hal yang kamu sukai dan tingkatkan nilai kamu.</string>
     <string name="saran_A">Pertahankan nilaimu! Tapi jangan sampai lalai dalam hal belajar.</string>
     <string name="saran_C">Cobalah mulai belajar hal-hal dasar agar nilai kamu bisa meningkat.</string>
-    <string name="judul_B">Mengatasi Kekurangan Nilai</string>
+    <string name="judul_B">Meningkatkan Nilai</string>
     <string name="judul_A">Menjaga Nilai Tetap Bagus</string>
     <string name="judul_C">Mengatasi Kekurangan Nilai</string>
+    <string name="koneksi_error">Koneksi Error</string>
+    <string name="channel_name">Updater</string>
+    <string name="channel_desc">Update data mahasiswa otomatis</string>
+    <string name="notif_title">Ayo Hitung Nilai Mahasiswa!</string>
+    <string name="notif_text">Cek sekarang Agar Nilai nya Cepat Terhitung.......</string>
 
 </resources>

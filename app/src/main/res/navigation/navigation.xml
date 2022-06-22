@@ -39,7 +39,7 @@
 
     <fragment
         android:id="@+id/saranFragment"
-        android:name="org.d3if0028.hitungnilaiakhir.ui.SaranFragment"
+        android:name="org.d3if0028.hitungnilaiakhir.ui.saran.SaranFragment"
         tools:layout="@layout/fragment_saran">
         <argument
             android:name="kategori"
